@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #554f4f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section Styles */
+        #home {
+            background-image: url('home2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        #home h2 {
+            font-size: 48px;
+        }
+
+        #home p {
+            font-size: 24px;
+        }
+
+        #home button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* About Section Styles */
+        #about {
+            padding: 20px;
+        }
+
+        #about h2 {
+            font-size: 36px;
+        }
+
+        #about p {
+            font-size: 18px;
+        }
+
+        #about img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Contact Section Styles */
+        #contact {
+            padding: 20px;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+        }
+
+        #contact p {
+            font-size: 18px;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Footer Section Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+        /* Field Section Styles */
+        #fields {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .field-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .field-item {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .field-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .field-item h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .field-item p {
+            font-size: 16px;
+        }
+
+        /* Show more details when clicked */
+        .field-details {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .field-item.active .field-details {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>WELCOME TO AGRICULTURE</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\mikey1\home.html">HOME</a></li>
+                <li><a href="#fields">Field</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h2>Here Types  Soils And Their Golden Crops</h2>
+        <p>Innovating farming for a sustainable future</p>
+        <button><li><a href="#fields">Field</a></li></button> 
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+       
+
+    <!-- Field Section -->
+    <section id="fields">
+        <h2>Our Products</h2>
+        <div class="field-container">
+            <!-- Product 1 -->
+            <div class="field-item" onclick="toggleDetails(this)">
+                <link rel="javascript" type="text/css" href="C:\Users\Dell\OneDrive\Desktop\mikey1\javascript.js">
+                <img src="rice.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Short description of the product.</p>
+                <div class="field-details">
+                    <p><strong>soil:</strong> alluvial clayey soil  </p>
+                    <p><strong>organic firtilizer :</strong>compost, farmyard manure, and green manure, like Azolla pinnata and Sesbania rostrata. (బంగారు పంట" అని తరచుగా పిలువబడే వరి, మంచి నీటి నిలుపుదల ఉన్న నేలల్లో, ముఖ్యంగా బంకమట్టి లేదా బంకమట్టి లోవామ్‌లలో బాగా పెరుగుతుంది, వీటిలో బంకమట్టి మరియు సేంద్రీయ పదార్థాలు ఎక్కువగా ఉంటాయి. సాధారణంగా ఉపయోగించే సేంద్రీయ ఎరువులలో కంపోస్ట్, పొల ఎరువు మరియు అజోల్లా పిన్నాట మరియు సెస్బానియా రోస్ట్రాటా వంటి పచ్చి ఎరువు ఉన్నాయి .)</p>
+                    <p><strong>inorganic fertilizer :</strong> nitrogenous fertilizers like urea or ammonium nitrate, and phosphorus fertilizers like triple superphosphate (TSP).  </p>
+                    <p><strong> Precautions:</strong>  including preparing the land, managing water, controlling pests and diseases, and practicing sustainable farming techniques.  (భూమిని సిద్ధం చేయడం, నీటిని నిర్వహించడం, తెగుళ్లు మరియు వ్యాధులను నియంత్రించడం మరియు స్థిరమైన వ్యవసాయ పద్ధతులను పాటించడం వంటి అనేక జాగ్రత్తలను అమలు చేయాలి .   
+                        జాగ్రత్తల యొక్క మరింత వివరణాత్మక వివరణ ఇక్కడ ఉంది:   
+                        1. భూమి తయారీ:
+                        ఫీల్డ్‌ను క్లియర్ చేయండి: రాళ్ళు, చెత్త మరియు కలుపు మొక్కలను తొలగించి శుభ్రమైన నాటడం ఉపరితలాన్ని సృష్టించండి.   
+                        నేల రకం మరియు pH: వరి సాగుకు నేల అనుకూలంగా ఉందని నిర్ధారించుకోండి, దీనికి సాధారణంగా కొద్దిగా ఆమ్లం నుండి తటస్థ pH అవసరం.   
+                        భూమి చదును చేయడం: నీటి పంపిణీ సమానంగా ఉండేలా లేజర్ పుంజం ఉపయోగించి భూమిని చదును చేయండి.   
+                        2. నీటి నిర్వహణ:
+                        నీటి లోతు: వరి పంట పెరుగుదల మొత్తం కాలంలో 3 నుండి 5 సెం.మీ. నీటి మట్టాన్ని నిర్వహించండి.
+                        డ్రైనేజీ: ముఖ్యంగా టాప్ డ్రెస్సింగ్ మరియు నీటిపారుదల చక్రాల సమయంలో నీరు నిలిచిపోకుండా ఉండటానికి పొలం నుండి అదనపు నీటిని తీసివేయండి.
+                        నీటిపారుదల: పంటకోతకు ముందు చివరి 10 నుండి 15 రోజులలో నీరు పెట్టడం ఆపండి.   
+                        3. తెగులు మరియు వ్యాధుల నియంత్రణ:
+                        తెగులు నియంత్రణ:
+                        నిరోధక రకాలను వాడండి, దగ్గరగా నాటడం మానుకోండి మరియు మాంసాహారులను (సాలెపురుగులు, కోకినెల్లిడ్లు, కందిరీగలు) సంరక్షించడం మరియు కాంతి ఉచ్చులను ఉపయోగించడం వంటి సహజ తెగులు నియంత్రణ పద్ధతులను ఉపయోగించండి.   
+                        వ్యాధి నియంత్రణ:
+                        అవసరమైన విధంగా శిలీంద్రనాశకాలు మరియు పురుగుమందులను వాడండి, కానీ ఇంటిగ్రేటెడ్ పెస్ట్ మేనేజ్‌మెంట్  పద్ధతులకు ప్రాధాన్యత ఇవ్వండి.   
+                        కలుపు నియంత్రణ:
+                        వనరుల కోసం వరి మొక్కలతో పోటీపడే కలుపు మొక్కలను చంపడానికి కలుపు మందులను ఉపయోగించండి.   )</p>
+                    <p><strong> AFTER TAKEN </strong> involves practices like maintaining water levels, applying fertilizers, controlling pests and diseases, and potentially intercropping or using sustainable techniques like System of Rice Intensification(వరి పంట నిర్వహణలో నీటి మట్టాలను నిర్వహించడం, ఎరువులు వేయడం, తెగుళ్లు మరియు వ్యాధులను నియంత్రించడం మరియు అంతర పంటలు వేయడం లేదా సిస్టమ్ ఆఫ్ రైస్ ఇంటెన్సిఫికేషన్ వంటి స్థిరమైన పద్ధతులను ఉపయోగించడం వంటి పద్ధతులు ఉంటాయి.   )</p>
+                    
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="field-item" onclick="toggleDetails(this)">
+                <img src="cotton.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Short description of the product.</p>
+                <div class="field-details">
+                    <p><strong>crop:</strong> cotton</p>
+                    <p><strong>soil:</strong> black soil,alluvial soil</p>
+                    <p><strong> organic firtilizer:  </strong>  compost, vermicompost, and green manure( కంపోస్ట్, వర్మీకంపోస్ట్ మరియు పచ్చి ఎరువును ఉపయోగించడాన్ని పరిగణించండి) </p>
+                    <p><strong>in organic firtilizer:  </strong> we can use  balanced NPK fertilizer (Nitrogen, Phosphorus, Potassium) like 20-10-10, supplemented with organic matter and potentially biofertilizers like Azolla,  </p>
+                    <p><strong>Precautions:  </strong>focus on good drainage, weed control, and pest management, while also considering soil fertility and irrigation practices ( మంచి నీటి పారుదల, కలుపు నియంత్రణ మరియు తెగుళ్ల నిర్వహణపై దృష్టి పెట్టండి, అదే సమయంలో నేల సారవంతం మరియు నీటిపారుదల పద్ధతులను కూడా పరిగణనలోకి తీసుకోండి) </p>
+                    <p><strong>AFTER TAKEN: </strong> To cultivate cotton successfully in black soil after a previous crop, prioritize soil health, pest and disease management, and efficient irrigation, while also considering crop rotation and nutrient management. 
+                        Here's a more detailed breakdown:
+                        <p>1. Soil Health & Preparation:
+                            Soil Testing:
+                            Conduct a soil test to determine nutrient levels (nitrogen, phosphorus, potassium) and pH to ensure optimal conditions for cotton growth. 
+                            Organic Matter:
+                            Incorporate compost or other organic matter to improve soil structure, water-holding capacity, and nutrient availability. </p>
+                        <p>మునుపటి పంట తర్వాత నల్ల నేలలో పత్తిని విజయవంతంగా పండించడానికి, నేల ఆరోగ్యం, తెగుళ్ళు మరియు వ్యాధుల నిర్వహణ మరియు సమర్థవంతమైన నీటిపారుదలకి ప్రాధాన్యత ఇవ్వండి, అదే సమయంలో పంట మార్పిడి మరియు పోషక నిర్వహణను కూడా పరిగణించండి .   
+                            ఇక్కడ మరింత వివరణాత్మక విచ్ఛిన్నం ఉంది:
+                            1. నేల ఆరోగ్యం & తయారీ:
+                            నేల పరీక్ష:
+                            పత్తి పెరుగుదలకు సరైన పరిస్థితులను నిర్ధారించడానికి పోషక స్థాయిలు (నత్రజని, భాస్వరం, పొటాషియం) మరియు pH ని నిర్ణయించడానికి నేల పరీక్షను నిర్వహించండి.   </p>
+                        </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="field-item" onclick="toggleDetails(this)">
+                <img src="groundnut.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Short description of the product.</p>
+                <div class="field-details">
+                    
+                    <p><strong>soil:</strong>well-drained, light-colored, loose sandy loam to sandy clay loam soil with a pH between 5.5 and 7.0 (5.5 మరియు 7.0 మధ్య pH కలిగిన బాగా నీరు పారుదల ఉన్న, లేత రంగు, వదులుగా ఉండే ఇసుక నుండి ఇసుక బంకమట్టి వరకు ఉండే లోమ్ నేల ) </p>
+                    <p><strong>organic firtilizer :</strong>compost, well-decomposed farm yard manure, and green manure,    ("బంగారు పంట" కోసం, కంపోస్ట్, బాగా కుళ్ళిన పొల ఎరువు మరియు పచ్చి ఎరువుతో పాటు రైజోబియం)</p>
+                    <p><strong>inorganic fertilizer :</strong> nitrogen (N), phosphorus (P), and potassium (K), along with calcium and sulfur. </p>
+                    <p><strong> Precautions:</strong>బంగారు పంట"గా ఉండేలా చూసుకోవడానికి, నేల తయారీ, కలుపు నియంత్రణ, తెగుళ్లు మరియు వ్యాధుల నిర్వహణ మరియు సకాలంలో నీటిపారుదలపై దృష్టి పెట్టండి.   
+                        జాగ్రత్తల యొక్క మరింత వివరణాత్మక వివరణ ఇక్కడ ఉంది:
+                        1. నేల మరియు భూమి తయారీ:
+                        నేల రకం: 5.5 మరియు 7.0 మధ్య pH ఉన్న, బాగా నీరు పారుదల ఉన్న, లేత రంగు, ఇసుక, లోమీ లేదా లోమీ ఇసుక నేలల్లో వేరుశనగ బాగా పెరుగుతుంది.   
+                        బరువైన నేలలను నివారించండి: బరువైన నేలలు పంట కోత కష్టాలకు మరియు కాయ నష్టానికి దారితీయవచ్చు.   
+                        నేల pH: పోషకాల లభ్యతను నిర్ధారించడానికి నేల pH ను సరైన పరిధిలో (5.5 నుండి 7.0) నిర్వహించండి.   
+                        సున్నం అప్లికేషన్: నేల pH 5.0 కంటే తక్కువగా ఉంటే, pH పెంచడానికి సున్నం (CaCO3) వేయండి.   
+                        సేంద్రియ పదార్థం: నేల సారవంతం, తేమ నిలుపుదల మరియు నిర్మాణాన్ని మెరుగుపరచడానికి సేంద్రియ పదార్థాలను (పొల ఎరువు, కంపోస్ట్) కలపండి.   </p>
+                    <p><strong> AFTER TAKEN </strong>After a groundnut (peanut) crop, to maintain soil health and prevent issues in subsequent crops, consider crop rotation, thorough soil preparation, and effective weed and pest management. (వేరుశనగ (వేరుశనగ) పంట తర్వాత, నేల ఆరోగ్యాన్ని కాపాడుకోవడానికి మరియు తదుపరి పంటలలో సమస్యలను నివారించడానికి, పంట మార్పిడి, సమగ్ర నేల తయారీ మరియు సమర్థవంతమైన కలుపు మరియు తెగుళ్ల నిర్వహణను పరిగణించండి.)</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="field-item" onclick="toggleDetails(this)">
+                <img src="lime.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Short description of the product.</p>
+                <div class="field-details">
+                    
+                    <p><strong>soil:</strong>  well-drained, light loamy or sandy loam soils with a pH range of 5.5 to 7.5(, 5.5 నుండి 7.5 pH పరిధి కలిగిన, బాగా నీరు పారుదల ఉన్న, తేలికపాటి లోమీ లేదా ఇసుక లోమీ నేలలు)</p>
+                    <p><strong>organic firtilizer :</strong>compost, well-rotted manure (cow, horse, or chicken), and leaf compost( నిమ్మకాయ బంగారు పంట కోసం , కంపోస్ట్, బాగా కుళ్ళిన ఎరువు (ఆవు, గుర్రం లేదా కోడి) మరియు ఆకు కంపోస్ట్ వంటి సేంద్రియ ఎరువులను ఉపయోగించడాన్ని పరిగణించండి)</p>
+                    <p><strong>inorganic fertilizer :</strong>, containing equal parts nitrogen, phosphorus, and potassium, is generally recommended to ensure strong growth and healthy fruit productio() </p>
+                    <p><strong> Precautions:</strong> ensure proper soil conditions, provide adequate irrigation, protect against pests and diseases, and manage the harvest effectively. (ఈ జాగ్రత్తలను పరిగణించండి: సరైన నేల పరిస్థితులను నిర్ధారించుకోవడం, తగినంత నీటిపారుదల అందించడం, తెగుళ్ళు మరియు వ్యాధుల నుండి రక్షించడం మరియు పంటను సమర్థవంతంగా నిర్వహించడం.   
+                        ఇక్కడ మరింత వివరణాత్మక విచ్ఛిన్నం ఉంది:   
+                        1. నేల మరియు నాటడం:
+                        నేల రకం: నిమ్మ చెట్లు బాగా నీరు పారుదల ఉన్న, కొద్దిగా ఆమ్ల నేలలో (pH 5.5-7.5) బాగా పెరుగుతాయి.   
+                        నేల తయారీ: లోతుగా దున్నడం మరియు ఎత్తైన పడకలను సిద్ధం చేయడం (దిగువన 2 మీటర్ల వెడల్పు, పైభాగంలో 1.5 మీటర్ల వెడల్పు మరియు 45 సెం.మీ ఎత్తు) సిఫార్సు చేయబడింది.   
+                        నాటడానికి గుంతలు: నాటడానికి ఒక నెల ముందు గుంటలు (60x60x60 సెం.మీ) తవ్వి, వాటిని సౌర వికిరణంతో క్రిమిరహితం చేయండి.   
+                        ఫలదీకరణం: గుంటలను పొల ఎరువు (20 కిలోలు), వేప పిడక (1 కిలో), మరియు సింగిల్ సూపర్ ఫాస్ఫేట్ (500 గ్రా) కలిపిన పైమట్టితో నింపండి.   
+                        అంతరం: 60 సెం.మీ. పరిమాణంలో ఉన్న గుంటలలో 4-5 మీటర్ల దూరంలో నిమ్మ చెట్లను నాటండి)</p>
+                    <p><strong> AFTER TAKEN </strong>focus on preventing diseases and pests, maintaining soil health, and ensuring proper irrigation to sustain future harvests. (, నేల ఆరోగ్యాన్ని కాపాడుకోవడం మరియు భవిష్యత్తులో పంటలను నిలబెట్టుకోవడానికి సరైన నీటిపారుదలని నిర్ధారించడంపై దృష్టి పెట్టండి.   
+                        జాగ్రత్తల యొక్క మరింత వివరణాత్మక వివరణ ఇక్కడ ఉంది:
+                        1. తెగులు మరియు వ్యాధుల నిర్వహణ:
+                        సిట్రస్ సైల్లా:
+                        ఈ రసం పీల్చే తెగుళ్లు ఆకులు మరియు పండ్లకు నష్టం కలిగిస్తాయి. వ్యాధిగ్రస్తులైన మొక్కలను కత్తిరించడం, కాల్చడం మరియు మోనోక్రోటోఫాస్-0.025% లేదా కార్బరిల్-0.1% వంటి తగిన పురుగుమందులను పిచికారీ చేయడం ద్వారా వాటిని నియంత్రించండి.   
+                        ఆకు చార పురుగు:
+                        వంకరగా మరియు వక్రీకరించబడిన ఆకుల లోపల లార్వా పెరుగుదలను తగ్గిస్తుంది. సహజ మాంసాహారులు వాటిని నియంత్రించడానికి అనుమతించండి.   
+                        ఇతర తెగుళ్ళు:
+                        మిడతల వంటి ఇతర తెగుళ్ల కోసం పర్యవేక్షించండి మరియు క్లోర్‌పైరిఫోస్ 20EC లేదా వేపనూనెతో పిచికారీ చేయడం వంటి తగిన చర్యలు తీసుకోండి.)</p>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="field-item" onclick="toggleDetails(this)">
+                <img src="tobbaco.jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>Short description of the product.</p>
+                <div class="field-details">
+                    <p><strong>soil:</strong> , well-drained, light to medium-textured soils like loamy sand or sandy loam with good water-holding capacity are ideal. ( బాగా నీరు పట్టుకునే, తేలికైన నుండి మధ్యస్థ ఆకృతి గల లోమీ ఇసుక లేదా మంచి నీటిని నిలుపుకునే సామర్థ్యం కలిగిన ఇసుక లోవామ్ వంటి నేలలు )</p>
+                    <p><strong>organic firtilizer :</strong>compost, animal manure (especially pig dung), and oil cake, which can improve soil health and nutrient availability (ఎరువు (ముఖ్యంగా పంది పేడ) మరియు ఆయిల్ కేక్ వంటి సేంద్రీయ ఎరువులను ఉపయోగించడాన్ని పరిగణించండి, ఇవి నేల ఆరోగ్యాన్ని మరియు పోషక లభ్యతను మెరుగుపరుస్తాయి.   
+                        ఇక్కడ మరింత వివరణాత్మక వివరణ ఉంది:
+                        సేంద్రియ ఎరువుల రకాలు:
+                        కంపోస్ట్: కుళ్ళిపోయిన సేంద్రియ పదార్థం (మొక్కలు మరియు ఆహార వ్యర్థాలు వంటివి) నేలను పోషకాలతో సుసంపన్నం చేస్తుంది మరియు దాని నిర్మాణాన్ని మెరుగుపరుస్తుంది.   
+                        పశువుల ఎరువు: జంతువుల వ్యర్థాలు, ముఖ్యంగా పంది పేడ, పోషకాలకు గొప్ప మూలం మరియు నేల సారాన్ని మరియు నిర్మాణాన్ని మెరుగుపరుస్తుంది.   
+                        ఆయిల్ కేక్: విత్తనాల నుండి నూనె తీసిన తర్వాత మిగిలిపోయిన అవశేషాలు (వేరుశనగ, పొద్దుతిరుగుడు మొదలైనవి) పోషకాలు మరియు సేంద్రియ పదార్థాలకు మంచి వనరుగా ఉంటాయి.)</p>
+                    <p><strong>inorganic fertilizer :</strong> fertilizer due to its balanced nitrogen (N) and potassium (K) content, essential for tobacco growth and quality. </p>
+                    <p><strong> Precautions:</strong>focus on disease and pest control, proper soil preparation, and good agricultural practices like timely irrigation, fertilization, and weed managemen(వ్యాధులు మరియు తెగుళ్ల నియంత్రణ, సరైన నేల తయారీ మరియు సకాలంలో నీటిపారుదల, ఎరువులు వేయడం మరియు కలుపు నిర్వహణ వంటి మంచి వ్యవసాయ పద్ధతులపై దృష్టి పెట్టండి.   
+                        పొగాకు సాగుకు సంబంధించిన జాగ్రత్తలు మరియు పద్ధతుల యొక్క మరింత వివరణాత్మక వివరణ ఇక్కడ ఉంది:   
+                        1. నేల మరియు నీటి నిర్వహణ:
+                        నేల రకం:
+                        పొగాకు బాగా నీరు కారే, తేలికైన, ఇసుక నేలల్లో బాగా పెరుగుతుంది.   
+                        నేల తయారీ:
+                        లోతుగా దున్నడం మరియు సేంద్రియ పదార్థాలను కలపడం వంటి సరైన నేల తయారీని నిర్ధారించుకోండి.   
+                        నీటిపారుదల:
+                        ముఖ్యంగా పుష్పించే మరియు దిగుబడి ఏర్పడే కాలంలో తగినంత నీటిపారుదల అందించండి, కానీ నీరు నిలిచిపోకుండా ఉండండి.   
+                        నీటి నిర్వహణ:
+                        ముఖ్యంగా మొలక దశలో మరియు నాట్లు వేసే ముందు జాగ్రత్తగా నీరు పెట్టండి.)</p>
+                    <p><strong> AFTER TAKEN </strong> focus on sanitation, crop rotation, and pest & disease management by destroying stalks and roots, rotating crops, and controlling nematodes, weeds, and insects. (గోల్డెన్ క్రాప్‌ల్యాండ్‌లో పొగాకు పంట కోత తర్వాత, మీరు కాండాలు మరియు వేర్లను నాశనం చేయడం, పంటలను తిప్పడం మరియు నెమటోడ్‌లు, కలుపు మొక్కలు మరియు కీటకాలను నియంత్రించడం ద్వారా పారిశుధ్యం, పంట మార్పిడి మరియు తెగుళ్లు & వ్యాధుల నిర్వహణపై దృష్టి పెట్టాలి.   
+                        పొగాకు పంట తర్వాత తీసుకోవలసిన జాగ్రత్తల గురించి ఇక్కడ మరింత వివరంగా ఉంది:   
+                        1. పారిశుధ్యం మరియు అవశేషాల నిర్వహణ:
+                        కాండం మరియు వేర్లు నాశనం:
+                        పంట కోసిన వెంటనే, పొగాకు మొక్కల కాండాలు మరియు వేర్లను నాశనం చేయండి. ఇది భవిష్యత్తులో పంటలలో వ్యాధులకు కారణమయ్యే బ్యాక్టీరియా మరియు వ్యాధికారకాల సంఖ్యను నేలలో తగ్గించడానికి సహాయపడుతుంది.   
+                        కలుపు నియంత్రణ:
+                        భవిష్యత్ పంటలతో వనరుల కోసం పోటీని నివారించడానికి కలుపు మొక్కలను మానవీయంగా లేదా కలుపు మందుల వాడకం ద్వారా తొలగించండి.)</p>
+                </div>
+            </div>
+
+           
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Agriculture - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Function to toggle the visibility of product details
+        function toggleDetails(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+

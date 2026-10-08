@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        /* Set the background image */
+        body {
+            background-image: url('black.jpg'); /* Path to your background image */
+            background-size: cover; /* Makes the background image cover the whole page */
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            margin: 2;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Sets a default font */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(245, 245, 245, 0.315);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .footer-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .footer-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <form action="#" method="POST" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="phone">Enter Your Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div class="footer-link">
+            <p>Remember your password? <a href="home.html">Go back to Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // Get the phone number value
+            var phone = document.getElementById('phone').value;
+
+            if (phone) {
+                alert('Password reset link has been sent to ' + phone);
+                // Wait for the user to click 'OK' before redirecting
+                setTimeout(function() {
+                    window.location.href = 'home.html'; // Redirect to homepage
+                }, 2000); // 2-second delay
+            } else {
+                alert('Please enter your phone number');
+            }
+        }
+    </script>
+
+</body>
+</html>
